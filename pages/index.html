@@ -2,18 +2,22 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <!--
+    'meta name' en 'meta http-equiv' heeft WebStorm voor me bedacht als ik de '!' live template gebruik...
+    -->
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Volkorenlasagne met spinazie en linzen</title>
 </head>
-<body>
 
+<body>
 <header>
     <h1>Volkorenlasagne met spinazie en linzen</h1>
     <h2>Met makkelijke aanpassingen zet je zó een gezonde lasagne op tafel</h2>
 </header>
-<img src="../assets/lasagne-spinazie.jpg" alt="Lasagne Spinazie" width="800px"/>
+<img src="../assets/lasagne-spinazie.jpg" alt="Lasagne Spinazie" width="800" />
 
 <section>
     <h3>Ingredienten</h3>
@@ -34,10 +38,10 @@
 <section>
     <h3>Uitgelichte ingredienten</h3>
     <blockquote>
-        <img src="../assets/spinazie.png" alt="Spinazie" width="150px"/><br/>
+        <img src="../assets/spinazie.png" alt="Spinazie" width="120" /><br />
         <p>Spinazie is erg gezond</p>
 
-        <img src="../assets/kaas.jpeg" alt="Kaas" width="150px"/><br/>
+        <img src="../assets/kaas.jpeg" alt="Kaas" width="120" /><br />
         <p>Kaas is vooral erg lekker</p>
     </blockquote>
 </section>
@@ -89,10 +93,10 @@
             <legend>Gegevens</legend>
 
             <label for="naam">Naam: </label>
-            <input type="text" id="naam" name="naam"/>
-            <br/><br/>
+            <input type="text" id="naam" name="naam" />
+            <br /><br />
             <label for="email">Email: </label>
-            <input type="text" name="email" id="email"/>
+            <input type="text" name="email" id="email" />
         </fieldset>
         <fieldset>
             <legend>Jouw review</legend>
@@ -101,8 +105,8 @@
             <select id="hoe-gevoonden">
                 <option>Anders</option>
             </select>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <p>Zou je dit recept willen uitproberen?</p>
             <input name="proberen" id="proberen-nee" type="radio" value="Nee">
             <label for="proberen-nee">Nee</label>
@@ -110,15 +114,15 @@
             <label for="proberen-ja">Ja</label>
             <input name="proberen" id="proberen-misschien" type="radio" value="Misschien">
             <label for="proberen-misschien">Misschien</label>
-            <br/>
-            <br/>
-            <label for="opmerkingen">Opmerkingen:</label><br/>
+            <br />
+            <br />
+            <label for="opmerkingen">Opmerkingen:</label><br />
             <textarea id="opmerkingen" cols="36" rows="4" placeholder="Wat vond je van het recept?"></textarea>
-            <br/>
+            <br />
             <input type="checkbox" id="nieuwsbrief" value="Ja" checked="checked">
             <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <button type="submit">Versturen</button>
         </fieldset>
     </form>
